@@ -1,0 +1,369 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-image: url("../intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    background-size: contain;
+    background-color: hsl(0, 100%, 74%);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    /* height: minmax(100vh "fit-content"); */
+}
+
+.content {
+    width : 35vw;
+    height: 70vh;
+    margin-top: 34vh;
+    margin-left: 11vw;
+}
+.content * {
+    color: white;
+    display: block;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-info {
+    margin-top: 25px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0;
+}
+
+.form-lane {
+    width: 39vw;
+    min-width : 39vw;
+    position: relative;
+    max-width: fit-content;
+    height: 70vh;
+    margin-top: 5rem;
+    /* margin-right: 1rem; */
+}
+.trial-info {
+   background-color: hsl(224, 76%, 43%);
+   height: 2.6rem;
+   margin-bottom: 18px;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-content: space-around;
+   border-radius: 7px;
+   box-shadow: 0px 4.6px 10px 0px rgb(43, 43, 43);
+}
+.trial-info > p {
+    display: inline;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0;
+    color: white;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+i {
+    font-style: normal;
+    font-weight:normal;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-content {
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 4.6px 10px 0px rgb(43, 43, 43);
+}
+.one, .two, .email, .password {
+    position: relative;
+}
+
+input {
+    width: 86%;
+    height: 7vh;
+    margin-left: 31px;
+    margin-top: 15px;
+    border-radius: 7px;
+    border-width: thin;
+    padding-left: 29px;
+    border-color: rgb(173, 173, 173);
+}
+
+#first {
+    margin-top: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.first-error-signal {
+   display: none;
+   position: absolute;
+   right: 0;
+   top: 0;
+   left: 33vw;
+}
+.first-error-signal * {
+    height: 15px;
+}
+.second-error-signal {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 33vw;
+}
+.second-error-signal *{
+  height: 15px;
+}
+.third-error-signal {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 33vw;
+}
+.third-error-signal *{
+  height: 15px;
+}
+.fourth-error-signal {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 33vw;
+}
+.fourth-error-signal *{
+  height: 15px;    
+}
+
+p {
+    display: none;
+    font-size: 10px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 25vw;
+    margin-top: 4px;
+}
+
+
+#btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding-left: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+small {
+    margin-top: 5px;
+    padding-left: 4vw;
+    font-size: 11px;
+    color: #777;
+    display: block;
+}
+span{
+    color: red;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("../intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+        background-size: contain;
+        background-color: hsl(0, 100%, 74%);
+        overflow: unset;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 100vw;
+        min-height: 100vh;
+        max-height: fit-content;
+    }
+    
+    .content {
+        width : 81vw;
+        height: 26vh;
+        margin-top: 10vh;
+        margin-left: 0;
+        display: block;
+        margin-left: unset;
+    }
+    .content * {
+        color: white;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 36px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .first-info {
+        margin-top: 23px;
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 0;
+        word-spacing: 10px;
+        width: 70vw;
+    }
+    br {
+        display: none;
+    }
+    
+    .form-lane {
+        width: 81vw;
+        min-width : 81vw;
+        max-width: fit-content;
+        height: fit-content;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+    .trial-info {
+       background-color: hsl(224, 76%, 43%);
+       height: 5rem;
+       margin-bottom: 18px;
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       align-content: space-around;
+       border-radius: 7px;
+       box-shadow: 0px 4.6px 10px 0px rgb(43, 43, 43);
+    }
+    .trial-info > p {
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 0;
+        width: 55vw;
+        color: white;
+        font-weight: bold;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+    i {
+        font-style: normal;
+        font-weight:normal;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .form-content {
+        background-color: white;
+        height: fit-content;
+        border-radius: 7px;
+        box-shadow: 0px 4.6px 10px 0px rgb(43, 43, 43);
+        
+    }
+    #first {
+        margin-top: 1.5rem;
+    }
+    .one, .two, .email, .password {
+        position: relative;
+    }
+
+    input {
+        width: 86%;
+        height: 8.5vh;
+        margin-left: 20px;
+        margin-top: 2vh;
+        border-radius: 7px;
+        border-width: thin;
+        padding-left: 29px;
+        border-color: rgb(173, 173, 173);
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    input::placeholder {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #777;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .first-error-signal {
+       position: absolute;
+       right: 0;
+       top: 0;
+       left: 66vw;
+    }
+    .first-error-signal * {
+        height: 15px;
+    }
+    .second-error-signal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 66vw;
+    }
+    .second-error-signal *{
+      height: 15px;
+    }
+    .third-error-signal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 66vw;
+    }
+    .third-error-signal *{
+      height: 15px;
+    }
+    .fourth-error-signal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 66vw;
+    }
+    .fourth-error-signal *{
+      height: 15px;    
+    }
+    
+    p {
+        font-size: 10px;
+        color: red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 50vw;
+        margin-top: 4px;
+    }
+    
+    #btn {
+        background-color: hsl(154, 59%, 51%);
+        color: white;
+        padding-left: 0px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    small {
+        padding-left: 6vw;
+        margin-top: 10px;
+        font-size: 11px;
+        color: #777;
+        display: block;
+        width: 88%;
+    }
+    span{
+        color: red;
+    }
+    
+}

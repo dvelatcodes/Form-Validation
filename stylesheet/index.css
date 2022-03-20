@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    background-image: url("../assets/images/bg-intro-desktop.png");
     background-size: contain;
     background-color: hsl(0, 100%, 74%);
     overflow: hidden;
@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100vw;
+    padding-top: 10vh;
     /* height: minmax(100vh "fit-content"); */
 }
 
@@ -78,10 +79,12 @@ i {
 }
 .form-content {
     background-color: white;
-    height: fit-content;
+    height: max-content;
+    min-height: 59vh;
     width: 100%;
     border-radius: 7px;
     box-shadow: 0px 4.6px 10px 0px rgb(43, 43, 43);
+    padding-bottom: 1rem;
 }
 .one, .two, .email, .password {
     position: relative;
@@ -172,8 +175,8 @@ p {
     cursor: pointer;
 }
 small {
-    margin-top: 5px;
-    padding-left: 4vw;
+    margin-top: 20px;
+    padding-left: 6.5vw;
     font-size: 11px;
     color: #777;
     display: block;
@@ -186,7 +189,7 @@ span{
 
 @media screen and (max-width: 375px) {
     body {
-        background-image: url("../intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+        background-image: url("../assets/images/bg-intro-mobile.png");
         background-size: contain;
         background-color: hsl(0, 100%, 74%);
         overflow: unset;
@@ -201,6 +204,7 @@ span{
         width: 100vw;
         min-height: 100vh;
         max-height: fit-content;
+        padding-top: unset;
     }
     
     .content {

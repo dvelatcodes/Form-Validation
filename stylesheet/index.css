@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    padding-top: 6vh;
+    padding-top: 3vh;
     /* height: minmax(100vh "fit-content"); */
 }
 

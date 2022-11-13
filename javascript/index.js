@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 const label1 = document.getElementsByTagName("label")[0];
 const label2 = document.getElementsByTagName("label")[1];
 const label3 = document.getElementsByTagName("label")[2];
@@ -116,7 +116,12 @@ const verifySubmit = (e) => {
     password.value = "";
     alert("Thanks a Bunch for Filling, Processing Details");
   }
-  if (!checkFirst || !checkLast || !checkEmail || !checkPassword) {
+  if (
+    checkFirst === null ||
+    checkLast === null ||
+    checkEmail === null ||
+    checkPassword === null
+  ) {
     alert("Please Fill Form Correctly, An Input Field Is Empty Or Invalid");
   }
 };
